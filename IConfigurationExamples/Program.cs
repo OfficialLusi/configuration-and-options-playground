@@ -1,4 +1,4 @@
-﻿namespace IConfigurationExamples;
+﻿namespace ConfigurationExamples;
 
 public class Program
 {

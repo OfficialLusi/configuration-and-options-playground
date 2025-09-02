@@ -1,22 +1,22 @@
-﻿/*
+﻿/*  
 
-IConfiguration è l'astrazione centrale di .net per leggere impostazioni (chiave/valore) da più provider:
-file JSON (es. appsettings.json), variabili d'ambiente, riga di comando, Azure Jey Vault, segreti d'utente, ecc.
-Le chiavi sono case-insensitive e gerarchiche (sezioni).
+IConfiguration is the central abstraction in .NET for reading settings (key/value) from multiple providers:  
+JSON files (e.g., appsettings.json), environment variables, command-line arguments, Azure Key Vault, user secrets, etc.  
+Keys are case-insensitive and hierarchical (sections).  
 
-Componenti principali:
-- IConfiguration: interfaccia principale per leggere valori/sezioni.
-- IConfigurationRoot: implementazione concreta risultante dal build.
-- IConfigurationBuilder: compone i provider (ordine = precedenza).
-- IConfigurationSection: rappresenta una sezione (sotto-albero) della configurazione (es. "ConnectionStrings").
+Main components:  
+- IConfiguration: the main interface for reading values/sections.  
+- IConfigurationRoot: the concrete implementation resulting from the build.  
+- IConfigurationBuilder: composes the providers (order = precedence).  
+- IConfigurationSection: represents a section (sub-tree) of the configuration (e.g., "ConnectionStrings").  
 
-Precedenza (ordine tipico):
-1. appsettings.json
-2. appsettings.{Environment}.json (es. Development)
-3. User Secrets (solo in sviluppo)
-4. Variabili d'ambiente
-5. Argomenti della riga di comando
-Gli ultimi sovrascrivono i primi.
+Precedence (typical order):  
+1. appsettings.json  
+2. appsettings.{Environment}.json (e.g., Development)  
+3. User Secrets (only in development)  
+4. Environment variables  
+5. Command-line arguments  
+The latter overwrite the former.  
 
 */
 
