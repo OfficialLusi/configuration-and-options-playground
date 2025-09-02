@@ -1,0 +1,20 @@
+[
+  {
+    "ContainingType": "ConfigurationExamplesWeb.Examples\u002B\u003C\u003Ec",
+    "Method": "\u003CWorkWithConfig\u003Eb__0_0",
+    "RelativePath": "mail",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "ConfigurationExamplesWeb.Examples\u002BMailSettings",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
