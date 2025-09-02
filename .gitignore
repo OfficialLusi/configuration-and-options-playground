@@ -1,0 +1,22 @@
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Output build
+bin/
+obj/
+
+# IDE vari
+.vscode/
+.idea/
+
+# NuGet
+packages/
+*.nupkg
+
+# Test/Log
+TestResults/
+*.log
